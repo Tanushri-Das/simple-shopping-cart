@@ -1,0 +1,54 @@
+.home {
+  margin: 60px 0;
+}
+.outer {
+  margin: 50px;
+}
+
+.see-products-btn {
+  border-radius: 6px;
+  font-size: 16px;
+  padding: 20px 25px;
+  cursor: pointer;
+  background-color: #4b87dc;
+  border: none;
+  outline: none;
+  color: white;
+}
+
+.button:hover {
+  background-position: left bottom;
+  cursor: pointer;
+}
+
+.text {
+  text-align: center;
+  font-size: 20px;
+  line-height: 30px;
+  color: black;
+  transition: all 0.6s ease-out;
+  display: block;
+}
+
+.text:hover {
+  color: white;
+}
+.welcome {
+  font-size: 36px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.faq {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.see-products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.productsList {
+  text-decoration: none;
+}

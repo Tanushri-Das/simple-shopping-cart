@@ -1,0 +1,58 @@
+header {
+  background-color: #9ec5fe;
+  color: #fff;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-name {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.shopping-cart-container {
+  position: relative;
+}
+
+.shopping-cart-icon {
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+}
+
+.cart-count {
+  position: absolute;
+  top: -16px;
+  right: -8px;
+  background-color: white;
+  color: black;
+  font-weight: 800;
+  border-radius: 50%;
+  padding: 3px 6px;
+  font-size: 1rem;
+}
+
+/* Adjust the styles for different screen sizes */
+@media screen and (max-width: 600px) {
+  header {
+    padding: 20px; /* Updated padding for small screens */
+  }
+  .app-name {
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .shopping-cart-icon {
+    font-size: 1.2rem;
+  }
+
+  .cart-count {
+    font-size: 0.6rem;
+  }
+}
