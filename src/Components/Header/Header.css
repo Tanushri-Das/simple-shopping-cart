@@ -1,6 +1,5 @@
 header {
-  /* background-color: #9ec5fe; */
-  background-color: #F63E7B;
+  background-color: #f63e7b;
   color: #fff;
   padding: 20px 60px;
 }
@@ -10,8 +9,8 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-.basket{
-  margin-right: 8px;
+.basket {
+  margin-right: 5px;
 }
 .app-name {
   text-decoration: none;
@@ -35,7 +34,6 @@ header {
   font-weight: 500;
   cursor: pointer;
   color: white;
-
   padding-right: 40px;
 }
 
@@ -58,7 +56,7 @@ header {
 }
 
 .menu-icon {
-  display: none; 
+  display: none;
   font-size: 1.5rem;
   cursor: pointer;
   color: white;
@@ -70,7 +68,7 @@ header {
   position: absolute;
   top: 80px;
   right: 20px;
-  background-color: #9ec5fe;
+  background-color: #f63e7b;
   padding: 10px;
   border-radius: 5px;
 }
@@ -87,8 +85,8 @@ header {
   }
   .cart-count {
     position: absolute;
-    top: 45px;
-    right: 75px;
+    top: 90px;
+    right: 130px;
     background-color: white;
     color: black;
     font-weight: 800;
@@ -104,7 +102,7 @@ header {
   }
 
   .menu-icon {
-    display: block; 
+    display: block;
   }
 
   .nav-links {
@@ -112,7 +110,7 @@ header {
   }
 
   .responsive-menu {
-    top: 60px; 
+    top: 60px;
   }
 }
 
@@ -122,22 +120,26 @@ header {
     display: none;
   }
 }
-
-
-
-
-
-
-
-
-/* .cart-count {
-  position: absolute;
-  top: 30px;
-  right: 75px;
-  background-color: white;
-  color: black;
-  font-weight: 800;
-  border-radius: 50%;
-  padding: 3px 6px;
-  font-size: 1rem;
-} */
+@media (min-width: 601px) and (max-width: 700px) {
+  .home-link {
+    padding-right: 20px;
+    font-size: 20px;
+  }
+  header {
+    padding: 20px 25px;
+  }
+  .app-name {
+    font-size: 25px;
+  }
+  .cart-count {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    background-color: white;
+    color: black;
+    font-weight: 800;
+    border-radius: 50%;
+    padding: 3px 6px;
+    font-size: 1rem;
+  }
+}

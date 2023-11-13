@@ -12,8 +12,8 @@ const Home = () => {
         Do you want to see my products ? Kindly Click this button
       </p>
       <div class="see-products">
-        <Link to="/productsList" className="productsList">
-          <button className="see-products-btn">See All Products</button>
+        <Link to="/productList" className="productsList">
+          <button className="see-products-btn">See Product List</button>
         </Link>
       </div>
     </div>

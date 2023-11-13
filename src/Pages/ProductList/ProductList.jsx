@@ -5,11 +5,17 @@ import Swal from 'sweetalert2';
 import './ProductList.css';
 
 const ProductList = () => {
+  // Access the dispatch function to send actions to the Redux store
   const dispatch = useDispatch();
+
+  // Retrieve the products in the cart from the Redux store
   const products = useSelector((state) => state.cart);
+
+  // State to manage the list of products and loading state
   const [productList, setProductList] = useState([]);
   const [loading, setLoading] = useState(true);
 
+  // Fetch product data from 'products.json' when the component mounts
   useEffect(() => {
     const fetchProducts = async () => {
       try {
@@ -27,10 +33,13 @@ const ProductList = () => {
     fetchProducts();
   }, []);
 
+  // Handle the "Add to Cart" button click
   const handleAddToCart = (product) => {
+    // Check if the product is already in the cart
     const existingProduct = products.find((item) => item.id === product.id);
 
     if (existingProduct) {
+      // Display an error message if the product is already in the cart
       Swal.fire({
         position: 'top-end',
         icon: 'error',
@@ -39,8 +48,10 @@ const ProductList = () => {
         timer: 2000,
       });
     } else {
+      // Dispatch the addToCart action to add the product to the cart
       dispatch(addToCart(product));
 
+      // Display a success message using SweetAlert
       Swal.fire({
         position: 'top-end',
         icon: 'success',
@@ -55,8 +66,10 @@ const ProductList = () => {
     <div className="products-list">
       <h2 className="products-list-text">Product List</h2>
       {loading ? (
+        // Display a loading spinner while fetching product data
         <div className="spinner"></div>
       ) : (
+        // Render the list of products when the data is loaded
         <div className="products">
           {productList.map((product) => (
             <div key={product.id} className="product">
@@ -66,6 +79,7 @@ const ProductList = () => {
                 <p className="product-price">${product.price}</p>
               </div>
               <div className="btn-div">
+                {/* Add to Cart button with onClick handler */}
                 <button className="add-to-cart" onClick={() => handleAddToCart(product)}>
                   Add to Cart
                 </button>
@@ -79,5 +93,3 @@ const ProductList = () => {
 };
 
 export default ProductList;
-
-

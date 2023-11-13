@@ -20,12 +20,15 @@ const Header = () => {
     <header>
       <div className="header-container">
         <Link to="/" className="app-name">
-         <FaShoppingBasket className="basket"/> SmartBasket
+          <FaShoppingBasket className="basket" /> SmartBasket
         </Link>
 
         <div className="nav-links">
           <NavLink to="/" className="home-link" onClick={closeMenu}>
             Home
+          </NavLink>
+          <NavLink to="/productList" className="home-link" onClick={closeMenu}>
+            ProductList
           </NavLink>
           <NavLink to="/checkout" className="shopping-cart-icon">
             <FaShoppingCart />
@@ -46,6 +49,9 @@ const Header = () => {
         <div className="responsive-menu">
           <NavLink to="/" className="home-link" onClick={closeMenu}>
             Home
+          </NavLink>
+          <NavLink to="/productList" className="home-link" onClick={closeMenu}>
+            ProductList
           </NavLink>
           <NavLink to="/checkout" className="shopping-cart-icon">
             <FaShoppingCart />
