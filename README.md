@@ -1,8 +1,12 @@
-# React + Vite
+This is a Simple Shopping Cart Website using React.js and Redux
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Overview
+1. **Product Listing:** View a list of available products on the "Products List" page.
+2. **Adding to Cart:** Click on the "Add to Cart" button to add a product to your shopping cart.
+3. **Checkout Process:** Navigate to the "Checkout" page to review and manage the items in your cart.
+4. **Quantity Adjustment:** Adjust the quantity of each product in the cart using the "+" and "-" buttons.
+5. **Remove Items:** Remove unwanted items from the cart by clicking the "Remove" button.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* Source Code: [https://github.com/Tanushri-Das/simple-shopping-cart](https://github.com/Tanushri-Das/simple-shopping-cart)
+* Live URL: [https://moonlit-boba-5ee5cc.netlify.app/](https://moonlit-boba-5ee5cc.netlify.app/)
