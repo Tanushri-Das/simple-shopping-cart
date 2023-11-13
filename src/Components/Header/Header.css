@@ -85,8 +85,8 @@ header {
   }
   .cart-count {
     position: absolute;
-    top: 90px;
-    right: 130px;
+    top: 82px;
+    right: 115px;
     background-color: white;
     color: black;
     font-weight: 800;
@@ -100,7 +100,9 @@ header {
   .app-name {
     font-size: 20px;
   }
-
+  .home-link {
+    font-size: 18px;
+  }
   .menu-icon {
     display: block;
   }
@@ -120,7 +122,7 @@ header {
     display: none;
   }
 }
-@media (min-width: 601px) and (max-width: 700px) {
+@media (min-width: 601px) and (max-width: 750px) {
   .home-link {
     padding-right: 20px;
     font-size: 20px;
