@@ -1,7 +1,7 @@
 
 .home {
   margin: 100px auto;
-  max-width: 600px; /* Adjust the maximum width as needed */
+  max-width: 600px;
 }
 
 .outer {
@@ -10,12 +10,13 @@
 
 .see-products-btn {
   border-radius: 6px;
-  font-size: 16px;
+  font-size: 18px;
   padding: 20px 25px;
   cursor: pointer;
   background-color: #4b87dc;
   border: none;
   outline: none;
+  font-weight: 500;
   color: white;
 }
 

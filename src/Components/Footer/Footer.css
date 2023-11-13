@@ -1,0 +1,42 @@
+.linkedin {
+  color: #0a66c2;
+  font-size: 30px;
+
+}
+.social-link{
+    margin-right: 25px;
+}
+.facebook {
+  color: #4267b2;
+  font-size: 30px;
+}
+.youtube {
+  color: #ff0000;
+  font-size: 30px;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 60px;
+  background-color: #b3ccf5;
+  color: #fff;
+}
+.copy {
+  font-size: 20px;
+  font-weight: 600;
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .social-links {
+    margin-top: 20px;
+  }
+  .footer {
+    padding: 40px 20px;
+  }
+}

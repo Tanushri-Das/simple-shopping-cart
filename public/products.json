@@ -1,62 +1,62 @@
 [
     { "id": 1,
       "name": "Samsung Galaxy S21",
-      "price": 12000,
+      "price": 900,
       "img":"https://www.custommacbd.com/cdn/shop/files/galaxy-s21-fe-lavender-custom-mac-bd.jpg?v=1685875478"
     },
     { "id": 2,
       "name": "iPhone 13 Pro",
-      "price": 16000,
+      "price": 750,
       "img":"https://d1rlzxa98cyc61.cloudfront.net/catalog/product/cache/1801c418208f9607a371e61f8d9184d9/1/7/177285_2020.jpg"
     },
     { "id": 3,
       "name": "Redmi Note 9",
-      "price": 16000,
+      "price": 800,
       "img":"https://priceintobd.com/wp-content/uploads/2022/05/Xiaomi-Redmi-Note-9-Green-2.jpg"
     },
     { "id": 4,
       "name": "HUAWEI P50 Pro",
-      "price": 16000,
+      "price": 850,
       "img":"https://consumer.huawei.com/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p50-pro/list/black.png"
     },
     { "id": 5,
       "name": "Xiaomi Mi 11",
-      "price": 16000,
+      "price": 900,
       "img":"https://www.mobiledokan.co/wp-content/uploads/2021/01/Xiaomi-Mi-11-Lite-Bubblegum-Blue.jpg"
     },
     { "id": 6,
       "name": "Oppo Find X3",
-      "price": 16000,
+      "price": 899,
       "img":"https://www.clove.co.uk/cdn/shop/products/316655f8-540c-4e87-8285-79dd3b65f6ea_1200x.jpg?v=1626428662"
     },
     { "id": 7,
       "name": "samsung galaxy s21",
-      "price": 16000,
+      "price": 690,
       "img":"https://cdn.dxomark.com/wp-content/uploads/medias/post-74826/SamsungGalaxys215g.jpg"
     },
     { "id": 8,
       "name": "Vivo X60 Pro",
-      "price": 16000,
+      "price": 700,
       "img":"https://classyprice.com.bd/images/Vivo-X60-Pro.jpg"
     },
     { "id": 9,
       "name": "Vivo X60 Pro",
-      "price": 16000,
+      "price": 799,
       "img":"https://classyprice.com.bd/images/Vivo-X60-Pro.jpg"
     },
     { "id": 10,
       "name": "xiaomi 12 pro",
-      "price": 16000,
+      "price": 950,
       "img":"https://cdn.dxomark.com/wp-content/uploads/medias/post-107919/Xiaomi-12-Pro-featured-image-packshot-review-1-1024x691.jpg"
     },
     { "id": 11,
     "name": "Meizu 18 Pro",
-    "price": 16000,
+    "price": 940,
     "img":"https://www.mobiledokan.co/wp-content/uploads/2020/12/Meizu-18-Pro-Blue.jpg"
   },
   { "id": 12,
     "name": "HTC U20 5G",
-    "price": 16000,
+    "price":860,
     "img":"https://m.media-amazon.com/images/I/61PDxoj2CmL.jpg"
   }
 ]

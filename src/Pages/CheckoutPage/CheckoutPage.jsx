@@ -29,9 +29,6 @@ const CheckoutPage = () => {
     dispatch(addToCart({ id: productId }));
   };
 
-  // const handleDecreaseQuantity = (productId) => {
-  //   dispatch(decreaseQuantity(productId));
-  // };
 
   const handleDecreaseQuantity = (productId) => {
     const existingProduct = cartItems.find((item) => item.id === productId);
@@ -60,7 +57,7 @@ const CheckoutPage = () => {
   };
 
   return (
-    <div className="products-list" style={{ border: "1px solid red" }}>
+    <div className="products-list">
       <h2 className="checkout-text">Checkout</h2>
       <p className="total">Total Amount: ${calculateTotal()}</p>
       <div className="checklist-table">
