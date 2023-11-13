@@ -1,5 +1,6 @@
 header {
-  background-color: #9ec5fe;
+  /* background-color: #9ec5fe; */
+  background-color: #F63E7B;
   color: #fff;
   padding: 20px 60px;
 }
@@ -9,12 +10,17 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-
+.basket{
+  margin-right: 8px;
+}
 .app-name {
   text-decoration: none;
   color: white;
   font-size: 30px;
   font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-links {

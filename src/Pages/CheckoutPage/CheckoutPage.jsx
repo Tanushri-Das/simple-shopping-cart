@@ -15,24 +15,38 @@ const CheckoutPage = () => {
   const dispatch = useDispatch();
 
   const handleRemoveFromCart = (productId) => {
-    dispatch(removeFromCart(productId));
     Swal.fire({
-        position: "top-end",
-        icon: "success",
-        title: "Remove product from cart successfully",
-        showConfirmButton: false,
-        timer: 1500,
-      });
+      title: "Are you sure?",
+      text: "You won't be able to revert this!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, delete it!"
+    }).then((result) => {
+      if (result.isConfirmed) {
+        // User confirmed, proceed with removing the product
+        dispatch(removeFromCart(productId));
+  
+        Swal.fire({
+          title: "Deleted!",
+          text: "Your product has been removed from the cart.",
+          icon: "success",
+          timer: 1500, // Adjust the duration in milliseconds
+          showConfirmButton: false
+        });
+      }
+    });
   };
+  
 
   const handleIncreaseQuantity = (productId) => {
     dispatch(addToCart({ id: productId }));
   };
 
-
   const handleDecreaseQuantity = (productId) => {
     const existingProduct = cartItems.find((item) => item.id === productId);
-  
+
     if (existingProduct && existingProduct.quantity > 1) {
       dispatch(decreaseQuantity(productId));
     } else {
@@ -40,14 +54,12 @@ const CheckoutPage = () => {
       Swal.fire({
         position: "top-end",
         icon: "error",
-        title: "To remove this product, please use the 'Remove' button.",
+        title: "To remove this product, please use the Remove button.",
         showConfirmButton: false,
         timer: 2000,
       });
     }
   };
-  
-  
 
   const calculateTotal = () => {
     return cartItems.reduce(
@@ -59,13 +71,13 @@ const CheckoutPage = () => {
   return (
     <div className="products-list">
       <h2 className="checkout-text">Checkout</h2>
-      <p className="total">Total Amount: ${calculateTotal()}</p>
+
       <div className="checklist-table">
         <div className="table-wrapper">
           <table>
             <thead>
               <tr>
-                <th>#</th>
+                <th>No.</th>
                 <th>Product Name</th>
                 <th>Product Image</th>
                 <th>Product Price</th>
@@ -112,6 +124,7 @@ const CheckoutPage = () => {
           </table>
         </div>
       </div>
+      <p className="total">Total Amount : ${calculateTotal()}</p>
       <div class="see-products">
         <Link to="/productsList" className="productsList">
           <button className="see-products-btn">Back Products List Page</button>

@@ -1,5 +1,5 @@
 .linkedin {
-  color: #0a66c2;
+  color: white;
   font-size: 30px;
 
 }
@@ -7,19 +7,20 @@
     margin-right: 25px;
 }
 .facebook {
-  color: #4267b2;
+    color: white;
   font-size: 30px;
 }
 .youtube {
-  color: #ff0000;
+    color: white;
   font-size: 30px;
 }
 .footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 60px;
-  background-color: #b3ccf5;
+  padding: 30px 60px;
+  background-color: #f63e7b;
+  /* background-color: #4267b2; */
   color: #fff;
 }
 .copy {

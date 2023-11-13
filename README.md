@@ -9,4 +9,4 @@ This is a Simple Shopping Cart Website using React.js and Redux
 
 
 * Source Code: [https://github.com/Tanushri-Das/simple-shopping-cart](https://github.com/Tanushri-Das/simple-shopping-cart)
-* Live URL: [https://moonlit-boba-5ee5cc.netlify.app/](https://moonlit-boba-5ee5cc.netlify.app/)
+* Live URL: [https://magnificent-crepe-1efbf1.netlify.app/](https://magnificent-crepe-1efbf1.netlify.app/)
