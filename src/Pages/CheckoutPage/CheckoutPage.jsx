@@ -29,9 +29,28 @@ const CheckoutPage = () => {
     dispatch(addToCart({ id: productId }));
   };
 
+  // const handleDecreaseQuantity = (productId) => {
+  //   dispatch(decreaseQuantity(productId));
+  // };
+
   const handleDecreaseQuantity = (productId) => {
-    dispatch(decreaseQuantity(productId));
+    const existingProduct = cartItems.find((item) => item.id === productId);
+  
+    if (existingProduct && existingProduct.quantity > 1) {
+      dispatch(decreaseQuantity(productId));
+    } else {
+      // If the quantity is 1, display a message instead of decreasing
+      Swal.fire({
+        position: "top-end",
+        icon: "error",
+        title: "To remove this product, please use the 'Remove' button.",
+        showConfirmButton: false,
+        timer: 2000,
+      });
+    }
   };
+  
+  
 
   const calculateTotal = () => {
     return cartItems.reduce(
