@@ -107,4 +107,7 @@ img {
     display: inline-block;
     margin: 10px 2px;
   }
+  .qty {
+    font-size: 14px;
+  }
 }
