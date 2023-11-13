@@ -30,7 +30,7 @@ const Header = () => {
           <NavLink to="/productList" className="home-link" onClick={closeMenu}>
             ProductList
           </NavLink>
-          <NavLink to="/checkout" className="shopping-cart-icon">
+          <NavLink to="/checkout" className="shopping-cart-icon" onClick={closeMenu}>
             <FaShoppingCart />
             {cartItems.length > 0 && (
               <span className="cart-count">{cartItems.length}</span>
@@ -53,7 +53,7 @@ const Header = () => {
           <NavLink to="/productList" className="home-link" onClick={closeMenu}>
             ProductList
           </NavLink>
-          <NavLink to="/checkout" className="shopping-cart-icon">
+          <NavLink to="/checkout" className="shopping-cart-icon" onClick={closeMenu}>
             <FaShoppingCart />
             {cartItems.length > 0 && (
               <span className="cart-count">{cartItems.length}</span>
