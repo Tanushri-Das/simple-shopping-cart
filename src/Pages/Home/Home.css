@@ -1,6 +1,11 @@
-.home {
+/* .home {
   margin: 60px 0;
+} */
+.home {
+  margin: 100px auto;
+  max-width: 600px; /* Adjust the maximum width as needed */
 }
+
 .outer {
   margin: 50px;
 }
