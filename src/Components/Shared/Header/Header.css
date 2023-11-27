@@ -1,9 +1,8 @@
 header {
-  background-color: #f63e7b;
+  background-color: #3944bc;
   color: #fff;
   padding: 20px 60px;
 }
-
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -68,7 +67,7 @@ header {
   position: absolute;
   top: 80px;
   right: 20px;
-  background-color: #f63e7b;
+  background-color: #3944bc;
   padding: 10px;
   border-radius: 5px;
 }

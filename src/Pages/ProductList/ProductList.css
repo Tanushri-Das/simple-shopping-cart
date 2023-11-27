@@ -47,7 +47,7 @@
 }
 
 .add-to-cart {
-  background-color: #F63E7B;
+  background-color: #3944bc;
   color: white;
   padding: 10px 20px;
   font-size: 16px;
@@ -60,7 +60,7 @@
 
 .spinner {
   border: 4px solid rgba(0, 0, 0, 0.1);
-  border-top: 4px solid #F63E7B;
+  border-top: 4px solid #3944bc;
   border-radius: 50%;
   width: 30px;
   height: 30px;
